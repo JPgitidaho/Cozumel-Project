@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Scoots is a fictional motorcycle rental company located on the island of Cozumel in the Caribbean Sea. It offers scooter, jeep, and all-terrain side-by-side vehicle rental services.">
+	<meta name="author" content="Juanita Perez Aguilera">
+	<title>Cozumel Scooter, Jeep, and ATV Rentals | Scoots</title>
+	<meta name="description" content="Discover the thrill of exploring Cozumel by motorcycle with Scoots! We offer scooter, jeep, and all-terrain vehicle rentals. Book now and have an unforgettable experience on the Caribbean island.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://jpgitidaho.github.io/WDD-220-/~Scoots~/images/hero-cozumel.webp">
+	<meta property="og:url" content="https://jpgitidaho.github.io/WDD-220-/~Scoots~">
+	<link rel="icon" href="./images/icon-scoots.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Licorice&family=Love+Light&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/int8dcq.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,400;0,700;0,900;1,100;1,200;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="./styles/normalize.css">
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/medium.css">
+	<link rel="stylesheet" href="./styles/larger.css">
+</head>
+
+
+<body>
+	<div id="weather-banner">
+		<div id="close-banner">&times;</div>
+		<p>La temperatura máxima para hoy en Cozumel es:<br><span id="max-temp">Cargando...</span><img id="weather-icon"
+				alt="Icono del tiempo"> </p>
+
+	</div>
+	<header>
+		<div class="contact-header">
+			<a class="contact" href="tel:+56222607000"><i class="material-icons">phone </i></a>
+			<a class="fa-social" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+			<a class="fa-social" href="https://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+			<a class="fa-social" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+			<button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
+			<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode"><i
+					class="material-icons">brightness_2</i></button>
+		</div>
+		<div class="menu-container">
+
+			<a class="logo" href="./index.html"><img class="logo" src="./images/logo-scoots.png" alt="logo-img"></a>
+
+			<nav id="nav">
+				<button class="rental"><a href="rentals.html">Rental</a></button>
+				<button><a href="bookings.html">Bookings</a></button>
+				<button><a href="contact.html">Contact</a></button>
+			</nav>
+
+		</div>
+	</header>
+	<div class="hero">
+		<picture>
+
+			<img src="./images/jeeps/cozumel-jeep.webp" alt="hero image">
+		</picture>
+		<div>
+			<h1 class="title-h1">SCOOTS!</h1>
+			<h2 class="title-h2">Contac us!</h2>
+		</div>
+	</div>
+	<main class="home-box">
+		<section class="location home-grid">
+			<div class="contact-info">
+				<div class="contact-text">
+					<h4>PLAYA DEL CARMEN</h4>
+					<span>Address</span>
+					<span> PR 00775 </span>
+					<span>scoots, PR 00775<a href="https://maps.app.goo.gl/wSUU9aanZiRPPCpd9">
+							<img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" alt="Ubicación">
+						</a></span>
+					<h4>CONTACT</h4>
+					<span>Benjamin Rivera Noriega </span>
+					<span><a href="mailto:santiagobusi.net@gmail.com"><i class="material-icons">email</i>
+							emailus@scootsrental.com
+						</a></span>
+					<span><a href="tel:+56222607000"><i class="material-icons">phone </i> +56 2
+							220000</a></span>
+					<button><a href="contact.html">see more</a></button>
+				</div>
+			</div>
+
+
+			<div class="contact-info2">
+				<div class="contact-text">
+					<h4>TERMINAL PUERTO MAYA</h4>
+					<span>Address</span>
+					<span>PR-251</span>
+					<span>scoots, PR 00775 <a href="https://maps.app.goo.gl/xbun8x4erdErMjMV9">
+							<img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" alt="Ubicación">
+						</a></span>
+					<h4>CONTACT</h4>
+					<span>Benjamin Rivera Noriega</span>
+					<span><a href="tel:+56222607000"><i class="material-icons">phone </i> +56 2
+							220000</a></span>
+
+					<span><a href="mailto:santiagobusi.net@gmail.com"><i class="material-icons">email</i>
+							emailus@scootsrental.com
+						</a></span>
+					<button><a href="contact.html">see more</a></button>
+				</div>
+			</div>
+
+		</section>
+		<section class="home-grid">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3737.706683834732!2d-86.974496!3d20.477237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDI4JzM4LjEiTiA4NsKwNTgnMjguMiJX!5e0!3m2!1ses-419!2scl!4v1712812444756!5m2!1ses-419!2scl"
+				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+			
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29895.818086356805!2d-86.9623285!3d20.5071584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cceda3d799%3A0xbf8ea7e97451cfd8!2sCentro%2C%20Cozumel%2C%20Q.R.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2scl!4v1712812655291!5m2!1ses-419!2scl"
+				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
+		<div class="ofert">
+			<h2>Get in Touch!</h2>
+			<h3>Message Us</h3>
+		</div>
+		<section class="form home-grid">
+			<form id="formcon" action="./gratitude.html" method="get">
+				
+					<label for="topic">Select a topic</label>
+					<select id="membresia" name="membresia" required>
+						<option value="NP"> </option>
+						<option value="rental">Rentals</option>
+						<option value="complaints">Complaints</option>
+						<option value="other">Others</option>
+					</select>
+			
+					<label for="name">Name:</label>
+					<input type="text" id="nombre" name="nombre" required>
+			
+			
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required placeholder="example@email.com">
+				
+			
+					<label for="descripcion"></label>
+					<textarea id="descripcion" name="descripcion"></textarea>
+					<button class="rental" type="submit"><a href="gratitude.html">Submit Form</a></button>
+			
+			</form>
+		</section>
+	</main>
+	<footer>
+
+		<p>© 2024 All rights reserved,~Scoots~</p>
+	</footer>
+	<!-- Script de JavaScript -->
+
+	<script src="./scripts/myHeader.js"></script>
+	<script src="./scripts/banner.js"></script>
+	<script src="./scripts/getdates-chamb.js"></script>
+	<script src="./scripts/darkMode.js"></script>
+	<script src="./scripts/weather.js"></script>
+	<script src="./scripts/carrusel.js"></script>
+
+</body>
+
+</html>

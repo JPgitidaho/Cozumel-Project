@@ -1,0 +1,586 @@
+:root {
+    --azul: #133C55;
+    --turqueza: #30D5C8;
+    --arena: #F5F5DC;
+    --coral: #E68632;
+    --coral-ligth: #E89145;
+    --blanco: #FFFFFF;
+
+
+    --federal-blue: #03045eff;
+    --honolulu-blue: #0077b6ff;
+    --pacific-cyan: #00b4d8ff;
+    --non-photo-blue: #90e0efff;
+    --light-cyan: #caf0f8ff;
+    --nyanza: #d8f3dcff;
+
+    --celadon: #b7e4c7ff;
+    --celadon-2: #95d5b2ff;
+    --mint: #74c69dff;
+    --dark-green: #081c15ff;
+
+
+    --Azul-Turquesa: #1ABC9C;
+    --Verde-Lima: #2ECC71;
+    --Amarillo-Soleado: #F7DC6F;
+    --Naranja-Coral: #FFA500;
+    --Gris-Piedra: #D2D7D3;
+
+    --top: linear-gradient(0deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+    --right: linear-gradient(90deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+    --bottom: linear-gradient(180deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+    --left: linear-gradient(270deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+    --top-right: linear-gradient(45deg, #f5f5dcff, #30d5c8ff);
+    --bottom-right: linear-gradient(135deg, #f5f5dcff, #F7DC6F, #e68632ff);
+    --top-left: linear-gradient(225deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+    --bottom-left: linear-gradient(315deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+    --radial: radial-gradient(#f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+
+}
+
+/*
+font-family: "flood-std", sans-serif;
+font-weight: 400;
+font-style: normal;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1800px;
+    font-size: 1rem;
+    background-color: var(--arena);
+    color: var(--azul)
+}
+
+body.dark-mode {
+    background: var(--dark-green);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: var(--azul);
+}
+.dark-mode p
+ {
+color: var(--turqueza);
+}
+p {
+    padding: 10px;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.dark-mode h3,
+.dark-mode h2,
+.dark-mode li,
+h3 {
+    color: var(--Azul-Turquesa);
+}
+
+h2 {
+    color: var(--azul);
+}
+
+#weather-banner {
+    display: inline-flex;
+    position: fixed;
+    background: var(--top-right);
+    width: 50%;
+    margin:10px 50px;
+    z-index: 4;
+    color: var(--azul);
+    text-align: center;
+    font-size: 1rem;
+}
+
+#close-banner {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+header {
+    width: 100%;
+    background-color: var(--arena);
+}
+
+.contact-header {
+    background-color: var(--azul);
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+}
+
+.dark-mode .menu-container {
+    background-color: var(--azul);
+}
+
+
+.fa-social,
+.contact-header a {
+    font-size: 16px;
+    display: inline-flex;
+    padding: 10px;
+    color: var(--arena);
+}
+
+.menu-container {
+    position: fixed;
+    z-index: 2;
+    margin-top: 40px;
+    width: 100%;
+    background-color: var(--arena);
+}
+
+
+.logo {
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: -80px;
+}
+
+#nav {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+
+#nav button {
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+
+#dark-mode-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: 0;
+    color: var(--arena);
+}
+
+#burger-icon {
+    display: none;
+
+}
+
+#currency-selector {
+    border: none;
+    background-color: var(--arena);
+    margin-left: 30px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: var(--Naranja-Coral);
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+button {
+    border: 1px solid var(--turqueza);
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 5px ;
+    font-size: 1.5rem;
+}
+
+.rental a,
+.btn a {
+    color: var(--arena);
+
+}
+
+.rental {
+    background-color: var(--coral);
+    letter-spacing: 2px;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+}
+
+
+.title-h1 {
+    font-family: "flood-std";
+    font-size: 8rem;
+    top: 40%;
+    left: 10%;
+    color: var(--federal-blue);
+
+}
+
+.title-h2 {
+    font-family: "Lato";
+    font-size: 4rem;
+    top: 30%;
+    left: 10%;
+    color: var(--federal-blue);
+
+}
+
+.title-h1,
+.title-h2,
+.btn {
+    position: absolute;
+}
+
+.dark-mode .title-h2 {
+    color: var(--azul);
+}
+
+.btn {
+    top: 60%;
+    left: 40%;
+    border-radius: 5px;
+    background-color: var(--coral);
+    padding: 20px 100px;
+    font-style: bold;
+}
+
+.home-box {
+    margin: 100px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.welcome {
+    grid-row: 1;
+    grid-column: span 2;
+    margin: 100px 0;
+}
+
+.welcome h2,
+.welcome h3 {
+    font-size: 3rem;
+}
+
+.card {
+    width: 100%;
+    border: 1px solid var(--turqueza);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card span {
+    color: var(--azul);
+}
+.dark-mode span {
+    color: var(--arena);
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-info {
+    text-align: left;
+}
+
+
+
+.price {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.see {
+    justify-self: center;
+    padding: 15px 50px;
+}
+
+
+.cards-container1 {
+    margin-bottom: 100px;
+    grid-row: span 2;
+}
+
+.cards-container2 {
+    margin-top: 100px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.cards-container2 a {
+    color: #868e96;
+    font-size: 1.5rem;
+    margin-top: 100px;
+}
+
+
+.image-ofert {
+    margin-bottom: -150px;
+}
+
+.ofert {
+    text-align: center;
+    margin: 150px;
+    font-size: 1.7rem;
+}
+
+.spans {
+    display: block;
+    margin: 200px 0;
+    text-align: center;
+    color: var(--honolulu-blue);
+    font-size: 2rem;
+}
+
+
+/*weather*/
+.weather-container {
+    margin: 100px 0;
+    justify-items: center;
+    background-image: url(../images/cozumel-banner.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.weather-text  {
+    color: var(--azul);
+    grid-column: 1;
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 80px;
+    padding: 20px;
+
+}
+
+#weather-info {
+    padding: 50px 0;
+    color: var(--arena);
+    font-family: 'Lato';
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #2c8fccdd;
+    display: inline-flex;
+    grid-column: span 2;
+}
+
+
+#weather-info img {
+    width: 25%;
+}
+
+.location {
+    margin: 100px;
+
+}
+
+.contact-text span a {
+    color: var(--arena);
+}
+
+.contact-text {
+    padding: 10px 0;
+    background-color: #2c8fccda;
+    color: var(--arena);
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-text span,
+.contact-text h4 {
+    display: block;
+    padding: 10px;
+}
+
+.contact-info button,
+.contact-info2 button {
+    margin-top: 20px;
+}
+
+.contact-info {
+    grid-column: 1;
+    grid-row: 1;
+    background-image: url(../images/Cozumel-Como-Llegar-Mexico-Chip-Viajero-4.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+
+
+}
+
+.contact-info2 {
+    background-image: url(../images/cozumel\ muelle.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 2;
+    grid-row: 1;
+
+
+}
+
+#formcon {
+    display: block;
+    margin: 0 100px;
+    width: 50%;
+    justify-self: center;
+}
+
+
+#formcon input,
+#formcon select,
+#formcon textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    border: 1px solid var(--honolulu-blue);
+    border-radius: 3px;
+}
+
+.card .gratitude-message {
+    text-align: center;
+    background-color: var(--turqueza);
+    margin: 150px 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+#descripcion {
+    height: 150px;
+}
+
+/*Testimonies*/
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-item .card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+
+}
+
+#testimonial-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 40%;
+    scroll-snap-align: start;
+}
+
+.card-text {
+    color: var(--dark-green);
+    font-family: "Licorice";
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+
+}
+
+footer {
+    background-color: var(--azul);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+/*****rental*/
+table {
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.dark-mode table{
+color: var(--arena);
+}
+th, td {
+    border: 1px solid var(--arena);
+    padding: 8px;
+    text-align: center;
+    font-size: 1rem;
+
+}
+th {
+    background-color: var(--Azul-Turquesa);
+
+}
+
+#rentals {
+display: grid;
+    grid-template-columns: 1fr 1fr;  
+}
+#rentals .card {
+    width: 80%;
+    margin:  30px;  
+    
+}
+
+/**booking*/
+.contract-information {
+    position: relative;
+    margin-top: 200px;
+    font-size:2rem;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+button[type="submit"],
+textarea,
+select
+ {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--turqueza);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.dark-mode label {
+    color: var(--turqueza);
+}
+
+.reservation-form {
+    margin: 200px 50px;
+    font-size: 1rem;
+}
+/* contact*/
+iframe {
+width: 100%;
+margin: 100px 0;
+}
+.contract-information{
+    font-size: 2rem;
+}

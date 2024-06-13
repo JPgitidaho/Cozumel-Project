@@ -1,0 +1,148 @@
+{
+  "rentals": [
+    {
+      "reservation": "Reservation",
+      "walk_in": "Walk-In",
+      "rental_type": "Scooter",
+      "max_persons": 1,
+      "half_day_3_hrs": {
+        "price": 20,
+        "price_eur": 17,
+        "price_gbp": 15,
+        "half_day_3_hrs_walk-in": 25,
+        "half_day_3_hrs_walk-in_eur": 21.25,
+        "half_day_3_hrs_walk-in_gbp": 18.75
+      },
+      "full_day_price": {
+        "price_full_day": 30,
+        "price_full_day_eur": 25.50,
+        "price_full_day_gbp": 22.50,
+        "price_full_day_walk-in": 35,
+        "price_full_day_walk-in_eur": 29.75,
+        "price_full_day_walk-in_gbp": 26.25
+      },
+      "name": "Honda Metro Scooter",
+      "img": "images/scooters/honda-metro.png"
+    },
+    {
+      "reservation": "Reservation",
+      "walk_in": "Walk-In",
+      "rental_type": "Scooter",
+      "max_persons": 2,
+      "half_day_3_hrs": {
+        "price": 30,
+        "price_eur": 25.50,
+        "price_gbp": 22.50,
+        "half_day_3_hrs_walk-in": 35,
+        "half_day_3_hrs_walk-in_eur": 29.75,
+        "half_day_3_hrs_walk-in_gbp": 26.25
+      },
+      "full_day_price": {
+        "price_full_day": 40,
+        "price_full_day_eur": 34,
+        "price_full_day_gbp": 30,
+        "price_full_day_walk-in": 45,
+        "price_full_day_walk-in_eur": 38.25,
+        "price_full_day_walk-in_gbp": 33.75
+      },
+      "name": "Honda Dio ",
+      "img": "images/scooters/-honda-dio.jpg"
+    },
+    {
+      "reservation": "Reservation",
+      "walk_in": "Walk-In",
+      "rental_type": "Scooter",
+      "max_persons": 2,
+      "half_day_3_hrs": {
+        "price": 40,
+        "price_eur": 34,
+        "price_gbp": 30,
+        "half_day_3_hrs_walk-in": 45,
+        "half_day_3_hrs_walk-in_eur": 38.25,
+        "half_day_3_hrs_walk-in_gbp": 33.75
+      },
+      "full_day_price": {
+        "price_full_day": 50,
+        "price_full_day_eur": 42.50,
+        "price_full_day_gbp": 37.50,
+        "price_full_day_walk-in": 55,
+        "price_full_day_walk-in_eur": 46.75,
+        "price_full_day_walk-in_gbp": 41.25
+      },
+      "name": "Honda PCX150 Scooter",
+      "img": "images/scooters/honda-px-150.jpg"
+    },
+    {
+      "reservation": "Reservation",
+      "walk_in": "Walk-In",
+      "rental_type": "Honda Pioneer",
+      "max_persons": 4,
+      "half_day_3_hrs": {
+        "price": 50,
+        "price_eur": 42.50,
+        "price_gbp": 37.50,
+        "half_day_3_hrs_walk-in": 60,
+        "half_day_3_hrs_walk-in_eur": 51,
+        "half_day_3_hrs_walk-in_gbp": 45
+      },
+      "full_day_price": {
+        "price_full_day": 70,
+        "price_full_day_eur": 59.50,
+        "price_full_day_gbp": 52.50,
+        "price_full_day_walk-in": 80,
+        "price_full_day_walk-in_eur": 68,
+        "price_full_day_walk-in_gbp": 60
+      },
+      "name": "Honda Pioneer ATV",
+      "img": "images/cuatriciclos/Honda Pioneer ATV.jpg"
+    },
+    {
+      "reservation": "Reservation",
+      "walk_in": "Walk-In",
+      "rental_type": "Jeep- 4 door",
+      "max_persons": 5,
+      "half_day_3_hrs": {
+        "price": 70,
+        "price_eur": 59.50,
+        "price_gbp": 52.50,
+        "half_day_3_hrs_walk-in": 85,
+        "half_day_3_hrs_walk-in_eur": 72.25,
+        "half_day_3_hrs_walk-in_gbp": 63.75
+      },
+      "full_day_price": {
+        "price_full_day": 100,
+        "price_full_day_eur": 85,
+        "price_full_day_gbp": 75,
+        "price_full_day_walk-in": 125,
+        "price_full_day_walk-in_eur": 106.25,
+        "price_full_day_walk-in_gbp": 93.75
+      },
+      "name": "Jeep Wrangler - 4 door with a/c",
+      "img": "images/jeeps/jeep-4puertas.jpg"
+    },
+    {
+      "reservation": "Reservation",
+      "walk_in": "Walk-In",
+      "rental_type": "Jeep- 2 door",
+      "max_persons": 4,
+      "half_day_3_hrs": {
+        "price": 60,
+        "price_eur": 51,
+        "price_gbp": 45,
+        "half_day_3_hrs_walk-in": 70,
+        "half_day_3_hrs_walk-in_eur": 59.50,
+        "half_day_3_hrs_walk-in_gbp": 52.50
+      },
+      "full_day_price": {
+        "price_full_day": 85,
+        "price_full_day_eur": 72.25,
+        "price_full_day_gbp": 63.75,
+        "price_full_day_walk-in": 90,
+        "price_full_day_walk-in_eur": 76.50,
+        "price_full_day_walk-in_gbp": 67.50
+      },
+      "name": "Jeep Wrangler - 2 door",
+      "img": "images/jeeps/jeep-2puertas.jpg"
+    }
+  ]
+}

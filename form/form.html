@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development-Juanita P. Aguilera-course assignment portal">
+    <meta name="author" content="Juanita Perez Aguilera">
+    <title>Juanita P. Aguilera - WDD 230 - Web Frontend Development- Form</title>
+    <!-- Metapropiedades de Open Graph -->
+    <meta property="og:title" content="Juanita P. Aguilera - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jpgitidaho.github.io/WDD-230-/">
+    <meta property="og:url" content="https://jpgitidaho.github.io/WDD-230-/index.html" >
+
+    <script src="https://kit.fontawesome.com/39df3eafe7.js" crossorigin="anonymous"></script>
+ 
+    <!-- Link to the normalize CSS file -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/forms.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Course:  WDD 230 - Web Frontend Development- Form</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <!-- Form -->
+        <form id="myForm" action="./record.html" method="get">
+            <!-- Username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required>
+            <small>Password must be at least 8 characters long and alphanumeric.</small>
+
+            <!-- Confirm Password -->
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <small id="passwordError">Passwords do not match. Please try again.</small>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern=".+@byui\.edu$" title="Valid byui.edu email address required" required>
+
+            <!-- Page Rating -->
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="updateRating(this.value)">
+            <span id="ratingValue">1</span>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p id="copyright-info">&copy; - Juanita P. Aguilera</p>
+        <p id="last-modified"></p>
+    </footer>
+<!-- Script de JavaScript -->
+<script src="./scripts/form.js"></script>
+<script src="./scripts/getdates.js"></script>
+</body>
+
+</html>

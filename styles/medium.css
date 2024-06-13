@@ -1,0 +1,270 @@
+
+@media (min-width:320px) and (max-width:1200px) {
+
+      
+    #burger-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 20%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+    #burger-icon::before {
+        content: '\2630';
+        color: var(--arena);
+        cursor: pointer;
+    }
+
+    #burger-icon.active::before {
+        content: '✖';
+    }
+
+
+    #nav {
+        display: none;
+    }
+
+    #nav.show {
+        display: block;
+        text-align: right;
+        background-color: var(--arena);
+
+    }
+
+    .dark-mode #nav {
+        background-color: var(--azul);
+    }
+
+    #nav button {
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    
+}
+
+.logo {
+    width: 150px;
+    margin-top: 0px;
+    margin-bottom: -30px;
+    margin-left: 10px;
+}
+
+
+}
+
+@media(min-width:400px) and (max-width:900px)
+{
+    .carousel-item {
+        flex: 0 0 auto;
+        width: 55%;
+        scroll-snap-align: start;
+    }
+    .carousel-item .card{
+      max-width: 300px;
+      height: auto;
+    }
+ 
+    
+}
+
+@media(min-width:320px) and (max-width:800px)
+{
+    .title-h1, .title-h2 {
+        font-size: 1.7rem;
+    }
+    .title-h1 {
+        top: 50%;
+        left: 40%;
+    }
+    .title-h2 {
+        top: 40%;
+    }
+}
+
+@media(min-width:320px) and (max-width:667px) {
+
+    #weather-banner p {
+        margin: 0;
+        padding: 30px;
+        font-size: 1rem;
+    }
+
+
+    #weather-banner {
+        width: 300px;
+    }
+  
+    body {
+        display: block;
+    }
+
+    .contact-header a {
+        font-size: 16px;
+    }
+
+    .home-grid {
+        display: block;
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin: 5px;
+
+    }
+
+    .hero {
+        width: 100%;
+        position: relative;
+    }
+
+    .hero img {
+        margin-top: 100px;
+
+    }
+
+    
+
+    .btn {
+        font-size: 16px;
+        top: 60%;
+        padding: 10px 20px;
+    }
+
+    .welcome h3,
+    .welcome h2 {
+        font-size: 1rem;
+
+    }
+
+    .welcome {
+        margin: 30px;
+        text-align: left;
+    }
+
+    .home-box {
+        margin: 0px;
+    }
+
+    .cards-container1 {
+        margin: 50px;
+     
+    }
+
+    .location {
+        margin: 10px;
+    }
+
+    .see {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .ofert {
+        margin: 50px 20px;
+    }
+
+    .image-ofert {
+        margin-left: 0;
+    }
+
+    .ofert h3,
+    .ofert h2,
+    .card-ofert a,
+    .card-ofert h2,
+    .card-ofert h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-ofert {
+        margin: 0;
+        padding: 0;
+    }
+
+    .spans ul {
+
+        margin: -100px 30px -50px;
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+    .weather-text {
+        font-size: 1rem;
+        text-align: center;
+        margin: 10px;
+        padding-top: 10px;
+    }
+
+    #weather-info p,
+    #weather-info h4 {
+        display: block;
+        font-size: 1rem;
+        padding: 10px;
+        margin: 0 20px;
+    }
+
+    
+    .contact-info2 {
+        margin-top: 10px;
+    }
+
+    .contact-text {
+        font-size: 16px;
+    }
+
+    #formcon {
+        margin: 10px;
+        width: 90%;
+    }
+
+
+    #testimonial-carousel,
+    .carousel-item {
+        margin: 30px;
+    }
+
+
+    .card-text,
+    .card-title,
+    .card-subtitle {
+        padding: 10px;
+    }
+    .carousel-item {
+        flex: 0 0 auto;
+        width: 100%;
+        scroll-snap-align: start;
+    }
+    .carousel-item .card
+     {
+      width: 200px;
+      height: auto;
+    }
+
+    span {
+        padding: 10px;
+    }
+
+#rentals .card {
+    width: 300px;
+}
+a, a:hover {
+    font-size: 16px;
+}
+.contract-information {
+        font-size: 1rem;
+        margin:10px 50px;   
+}
+#rentals {
+    display: block;
+    grid-column: 1fr;
+}
+th {
+    writing-mode: vertical-lr; /* Cambia la orientación de escritura a vertical, de izquierda a derecha */
+    white-space: nowrap; /* Evita que los nombres se desborden en dispositivos móviles */
+  }
+}
