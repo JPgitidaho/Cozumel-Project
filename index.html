@@ -4,10 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Scoots is a fictional motorcycle rental company located on the island of Cozumel in the Caribbean Sea. It offers scooter, jeep, and all-terrain side-by-side vehicle rental services.">
+	<meta name="description" content="Discover the thrill of exploring Cozumel by motorcycle with Scoots! We offer scooter, jeep, and all-terrain vehicle rentals. Book now and have an unforgettable experience on the Caribbean island.">
 	<meta name="author" content="Juanita Perez Aguilera">
 	<title>Cozumel Scooter, Jeep, and ATV Rentals | Scoots</title>
-	<meta name="description" content="Discover the thrill of exploring Cozumel by motorcycle with Scoots! We offer scooter, jeep, and all-terrain vehicle rentals. Book now and have an unforgettable experience on the Caribbean island.">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://jpgitidaho.github.io/WDD-220-/~Scoots~/images/hero-cozumel.webp">
 	<meta property="og:url" content="https://jpgitidaho.github.io/WDD-220-/~Scoots~">
@@ -15,13 +14,11 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Licorice&family=Love+Light&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.typekit.net/int8dcq.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,400;0,700;0,900;1,100;1,200;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/int8dcq.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="./styles/normalize.css">
 	<link rel="stylesheet" href="./styles/style.css">
 	<link rel="stylesheet" href="./styles/medium.css">
@@ -31,29 +28,24 @@
 
 <body>
 	<div id="weather-banner">
-		<div id="close-banner">&times;</div>
-		<p>The maximum temperature for today in Cozumel is:<br><span id="max-temp">Loading...</span><img id="weather-icon"
-				alt="Weather Icon"> </p>
-
+		<div id="close-banner" role="button" aria-label="Close weather banner">&times;</div>
+		<p>The maximum temperature for today in Cozumel is:<br><span id="max-temp">Loading...</span><img id="weather-icon" alt="Weather Icon"></p>
 	</div>
 	<header>
 		<div class="contact-header">
-			<a class="contact" href="tel:+56222607000"><i class="material-icons">phone</i></a>
-			<a class="fa-social" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-			<a class="fa-social" href="https://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-			<a class="fa-social" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-			<button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
-			<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode"><i
-				class="material-icons">brightness_2</i></button>
+			<a class="contact" href="tel:+56222607000" aria-label="Call us"><i class="material-icons">phone</i></a>
+			<a class="fa-social" href="https://www.facebook.com/" aria-label="Visit our Facebook page"><i class="fa fa-facebook"></i></a>
+			<a class="fa-social" href="https://www.linkedin.com/in/" aria-label="Visit our LinkedIn profile"><i class="fa fa-linkedin"></i></a>
+			<a class="fa-social" href="https://www.instagram.com/" aria-label="Visit our Instagram page"><i class="fa fa-instagram"></i></a>
+			<button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu" aria-label="Toggle Menu"></button>
+			<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode" aria-label="Toggle Dark Mode"><i class="material-icons" aria-hidden="true">brightness_2</i> <span class="sr-only">Toggle Dark Mode</span></button>
 		</div>
 		<div class="menu-container">
-			
-			<a class="logo" href="./index.html"><img class="logo" src="./images/logo-scoots.png" alt="Logo Image"></a>
-			<select id="currency-selector" onchange="convertCurrency()">
-				<option>&#8364;</option>
-				<option value="usd"> USD</option>
-				<option value="eur">&#8364; EUR</option>
-				<option value="gbp">&#x00A3; GBP</option>
+			<a class="logo" href="./index.html"><img class="logo" src="./images/logo-scoots.png" alt="Scoots logo"></a>
+			<select id="currency-selector" onchange="convertCurrency()" aria-label="Select currency">
+				<option value="usd">$ USD</option>
+				<option value="eur">€ EUR</option>
+				<option value="gbp">£ GBP</option>
 			</select>
 			<nav id="nav">
 				<button class="rental"><a href="rentals.html">Rental</a></button>
@@ -68,12 +60,11 @@
 	<div class="hero">
 		<picture>
 
-			<img src="./images/hero-2.webp" alt="Hero Image">
+			<img src="./images/hero.webp" alt="Hero Image" loading="lazy">
 		</picture>
 		<div>
-			<h2 class="title-h2">Discover Cozumel with </h2>
-			<h1 class="title-h1">SCOOTS!</h1>
-
+			<h1 class="title-h1">Discover <br> Cozumel with </h1>
+			<h2 class="title-h2">SCOOTS!</h2>
 		</div>
 
 		<button class="btn"><a href="./rentals.html">Rent Now</a>
@@ -83,7 +74,7 @@
 	<main class="home-box">
 
 		<div class="welcome">
-			<h2>WE DO IT BETTER!</h2>
+			<h1>WE DO IT BETTER!</h1>
 			<h2>
 				Enjoy a great
 				rental experience and start
@@ -93,69 +84,59 @@
 		<section class="cards-container1 home-grid">
 			<div class="card">
 				<h2>Scooter</h2>
-				<img src="./images/scooters/metro-terreno.webp" alt="Scooter-Metro">
+				<img src="./images/scooters/metro-terreno.webp" alt="Scooter-Metro" loading="lazy">
 				<div class="card-info">
-					<p>From <span class="price" data-usd="70.00">$70.00</span>
-					</p>
-					<button class="see"><a href="bookings.html">See More</a></button>
+					<p>From <span class="price" data-usd="70.00">$70.00</span></p>
+					<button class="see"><a href="rentals.html">See More</a></button>
 				</div>
 			</div>
 			<div class="card">
 				<h2>Scooters</h2>
-				<img src="./images/scooters/scooter-1.webp" alt="Scooter-Dio">
+				<img src="./images/scooters/scooter-1.webp" alt="Scooter-Dio" loading="lazy">
 				<div class="card-info">
-					<p>From <span class="price" data-usd="20.00" >$20.00</span>
-					</p>
-					<button class="see"><a href="bookings.html">See More</a></button>
+					<p>From <span class="price" data-usd="20.00">$20.00</span></p>
+					<button class="see"><a href="rentals.html">See More</a></button>
 				</div>
 			</div>
-
 			<div class="card">
 				<h2>Scooters</h2>
-				<img src="./images/scooters/scooter-2.webp" alt="Scooter-pcx150">
+				<img src="./images/scooters/scooter-2.webp" alt="Scooter-pcx150" loading="lazy">
 				<div class="card-info">
-					<p>From<span class="price" data-usd="40.00" >$40.00</span>
-					</p>
-					<button class="see"><a href="bookings.html">See More</a></button>
+					<p>From <span class="price" data-usd="40.00">$40.00</span></p>
+					<button class="see"><a href="rentals.html">See More</a></button>
 				</div>
 			</div>
-
-
 			<div class="card">
 				<h2>Honda Pioneer ATV</h2>
-				<img src="./images/cuatriciclos/Honda Pioneer ATV.webp" alt="Honda Pioneer ATV">
+				<img src="./images/cuatriciclos/Honda Pioneer ATV.webp" alt="Honda Pioneer ATV" loading="lazy">
 				<div class="card-info">
-					<p>From <span class="price" data-usd="50.00" >$50.00</span>
-					</p>
-					<button class="see"><a href="bookings.html">See More</a></button>
+					<p>From <span class="price" data-usd="50.00">$50.00</span></p>
+					<button class="see"><a href="rentals.html">See More</a></button>
 				</div>
 			</div>
 			<div class="card">
 				<h2>Jeep Wrangler</h2>
-				<img src="./images/jeeps/jeep-terreno-2puertas.webp" alt="Jeep Wrangler">
+				<img src="./images/jeeps/jeep-terreno-2puertas.webp" alt="Jeep Wrangler" loading="lazy">
 				<div class="card-info">
-					<p>From					<span class="price" data-usd="60.00" >$60.00</span>
-					</p>
-					<button class="see"><a href="bookings.html">See More</a></button>
+					<p>From <span class="price" data-usd="60.00">$60.00</span></p>
+					<button class="see"><a href="rentals.html">See More</a></button>
 				</div>
-
 			</div>
 			<div class="card">
 				<h2>Jeep Wrangler</h2>
-				<img src="./images/jeeps/jeep-terreno4puertas.webp" alt="Jeep Wrangler">
+				<img src="./images/jeeps/jeep-terreno4puertas.webp" alt="Jeep Wrangler" loading="lazy">
 				<div class="card-info">
-					<p>From 					<span class="price" data-usd="70.00">$70.00</span>
-					</p>
-					<button class="see"><a href="bookings.html">See More</a></button>
+					<p>From <span class="price" data-usd="70.00">$70.00</span></p>
+					<button class="see"><a href="rentals.html">See More</a></button>
 				</div>
 			</div>
-
 		</section>
+		
 
 
 		<div class="ofert">
-			<h2>RENT LIKE YOU'VE NEVER SEEN BEFORE</h2>
-			<h3>Search, Book, and Enjoy.</h3>
+			<h2>Rent Like You've Never Seen Before</h2>
+			<h3>SEARCH, BOOK, AND ENJOY.</h3>
 		</div>
 		<div class="cards-container2 home-grid">
 			<div class="card-ofert">
@@ -170,7 +151,7 @@
 				<img class="image-ofert" src="./images/Diseño sin título/2.png" alt="number 2">
 				<h2>Book at the Best Price</h2>
 				<p>
-					<a href="bookings.html">Check-in at one of our
+					<a href="rentals.html">Check-in at one of our
 						convenient locations or
 						enjoy our free pick-up and
 						drop-off.</a>
@@ -227,9 +208,9 @@
 					Our Locations
 				</h2>
 				<h3>
-					We are a local company operated by the owners. If you would
-					like to make a reservation or you have any questions, we can
-					be reached by one of the following methods
+					OF COURSE, WE ARE A LOCAL COMPANY OPERATED BY THE OWNERS. 
+					IF YOU WOULD LIKE TO MAKE A RESERVATION OR HAVE ANY QUESTIONS, 
+					YOU CAN REACH US USING ONE OF THE FOLLOWING METHODS
 				</h3>
 			</div>
 		</section>
@@ -279,32 +260,30 @@
 
 		<div class="ofert">
 			<h2>Get in Touch!</h2>
-			<h3>Message Us</h3>
+			<h3>MESSAGE US</h3>
 		</div>
 		<section class="form home-grid">
 			<form id="formcon" action="./gratitude.html" method="get">
+				<label for="membresia">Select a topic</label>
+				<select id="membresia" name="membresia" required>
+					<option value="NP"> </option>
+					<option value="rental">Rentals</option>
+					<option value="complaints">Complaints</option>
+					<option value="other">Others</option>
+				</select>
+			
+				<label for="nombre">Name:</label>
+				<input type="text" id="nombre" name="nombre" required>
+			
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required placeholder="example@email.com">
+			
+				<label for="descripcion">Description:</label>
+				<textarea id="descripcion" name="descripcion"></textarea>
 				
-					<label for="topic">Select a topic</label>
-					<select id="membresia" name="membresia" required>
-						<option value="NP"> </option>
-						<option value="rental">Rentals</option>
-						<option value="complaints">Complaints</option>
-						<option value="other">Others</option>
-					</select>
-			
-					<label for="name">Name:</label>
-					<input type="text" id="nombre" name="nombre" required>
-			
-			
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required placeholder="example@email.com">
-				
-			
-					<label for="descripcion"></label>
-					<textarea id="descripcion" name="descripcion"></textarea>
-					<button class="rental" type="submit"><a href="gratitude.html">Submit Form</a></button>
-			
+				<button class="rental" type="submit">Submit Form</button>
 			</form>
+			
 		</section>
 
 		<div class="ofert">

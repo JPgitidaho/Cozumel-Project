@@ -74,15 +74,9 @@
 @media(min-width:320px) and (max-width:800px)
 {
     .title-h1, .title-h2 {
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
-    .title-h1 {
-        top: 50%;
-        left: 40%;
-    }
-    .title-h2 {
-        top: 40%;
-    }
+ 
 }
 
 @media(min-width:320px) and (max-width:667px) {

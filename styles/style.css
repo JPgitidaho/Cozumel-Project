@@ -81,7 +81,7 @@ li {
 .dark-mode h3,
 .dark-mode h2,
 .dark-mode li,
-h3 {
+.dark-mode h3 {
     color: var(--Azul-Turquesa);
 }
 
@@ -93,8 +93,8 @@ h2 {
     display: inline-flex;
     position: fixed;
     background: var(--top-right);
-    width: 50%;
-    margin:10px 50px;
+    width: 100%;
+    margin:0;
     z-index: 4;
     color: var(--azul);
     text-align: center;
@@ -137,7 +137,7 @@ header {
 .menu-container {
     position: fixed;
     z-index: 2;
-    margin-top: 40px;
+    margin-top: 25px;
     width: 100%;
     background-color: var(--arena);
 }
@@ -151,7 +151,7 @@ header {
 
 #nav {
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 5px 10px;
 }
 
@@ -195,18 +195,26 @@ button {
     padding: 10px 30px;
     font-weight: bold;
     border-radius: 5px ;
-    font-size: 1.5rem;
 }
 
 .rental a,
 .btn a {
-    color: var(--arena);
+    color: var(--azul);
+    font-size: 1.2rem;
 
 }
-
+.btn {
+    top: 60%;
+    left: 40%;
+    border-radius: 5px;
+    background-color: var(--coral);
+    padding: 20px 100px;
+    font-style: bold;
+}
 .rental {
     background-color: var(--coral);
     letter-spacing: 2px;
+
 }
 
 .hero img {
@@ -219,8 +227,8 @@ button {
 
 
 .title-h1 {
-    font-family: "flood-std";
-    font-size: 8rem;
+    font-family: "Lato";
+    font-size: 3rem;
     top: 40%;
     left: 10%;
     color: var(--federal-blue);
@@ -228,9 +236,9 @@ button {
 }
 
 .title-h2 {
-    font-family: "Lato";
-    font-size: 4rem;
-    top: 30%;
+    font-family: "flood-std";
+    font-size:6rem;
+    top:60%;
     left: 10%;
     color: var(--federal-blue);
 
@@ -246,14 +254,7 @@ button {
     color: var(--azul);
 }
 
-.btn {
-    top: 60%;
-    left: 40%;
-    border-radius: 5px;
-    background-color: var(--coral);
-    padding: 20px 100px;
-    font-style: bold;
-}
+
 
 .home-box {
     margin: 100px;

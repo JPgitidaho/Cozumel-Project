@@ -30,12 +30,7 @@
 
 
 <body>
-	<div id="weather-banner">
-		<div id="close-banner">&times;</div>
-		<p>La temperatura máxima para hoy en Cozumel es:<br><span id="max-temp">Cargando...</span><img id="weather-icon"
-				alt="Icono del tiempo"> </p>
 
-	</div>
 	<header>
 		<div class="contact-header">
 			<a class="contact" href="tel:+56222607000"><i class="material-icons">phone </i></a>
@@ -61,11 +56,10 @@
 	<div class="hero">
 		<picture>
 
-			<img src="./images/jeeps/cozumel-jeep.webp" alt="hero image">
+			<img src="./images/hero-3.jpg" alt="hero image">
 		</picture>
 		<div>
-			<h1 class="title-h1">SCOOTS!</h1>
-			<h2 class="title-h2">Contac us!</h2>
+			<h1 class="title-h1">Contac us!</h1>
 		</div>
 	</div>
 	<main class="home-box">
@@ -125,32 +119,30 @@
 		</section>
 		<div class="ofert">
 			<h2>Get in Touch!</h2>
-			<h3>Message Us</h3>
+			<h3>MESSAGE US</h3>
 		</div>
 		<section class="form home-grid">
 			<form id="formcon" action="./gratitude.html" method="get">
+				<label for="membresia">Select a topic</label>
+				<select id="membresia" name="membresia" required>
+					<option value="NP"> </option>
+					<option value="rental">Rentals</option>
+					<option value="complaints">Complaints</option>
+					<option value="other">Others</option>
+				</select>
+			
+				<label for="nombre">Name:</label>
+				<input type="text" id="nombre" name="nombre" required>
+			
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required placeholder="example@email.com">
+			
+				<label for="descripcion">Description:</label>
+				<textarea id="descripcion" name="descripcion"></textarea>
 				
-					<label for="topic">Select a topic</label>
-					<select id="membresia" name="membresia" required>
-						<option value="NP"> </option>
-						<option value="rental">Rentals</option>
-						<option value="complaints">Complaints</option>
-						<option value="other">Others</option>
-					</select>
-			
-					<label for="name">Name:</label>
-					<input type="text" id="nombre" name="nombre" required>
-			
-			
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required placeholder="example@email.com">
-				
-			
-					<label for="descripcion"></label>
-					<textarea id="descripcion" name="descripcion"></textarea>
-					<button class="rental" type="submit"><a href="gratitude.html">Submit Form</a></button>
-			
+				<button class="rental" type="submit">Submit Form</button>
 			</form>
+			
 		</section>
 	</main>
 	<footer>

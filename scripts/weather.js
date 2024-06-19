@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    getWeather('Cozumel', 'mx', 'today'); 
-    getWeather('Cozumel', 'mx', 'tomorrow', 15); 
+    getWeather('Cozumel', 'mx', 'today');
+    getWeather('Cozumel', 'mx', 'tomorrow', 15);
 });
 
 // Function to fetch weather data from the OpenWeatherMap API
@@ -38,7 +38,7 @@ async function getWeather(city, country, type, hour = null) {
             <div>
                 <h4>WEATHER  NOW </h4>
                 <p>${weatherDescription} </p>
-                <p><img src="http://openweathermap.org/img/wn/${weatherIconCode}.png" alt="Weather Icon"></p>
+                <img id="weather-icon" src="https://openweathermap.org/img/wn/11d.png" alt="Weather Icon">
                 <p>tº: ${temperature} °C </p>
                 <p> Feels Like: ${feelsLike} °C </p>
                 <p> Humidity: ${humidity} % </p>
