@@ -9,7 +9,7 @@
 
     --federal-blue: #03045eff;
     --honolulu-blue: #0077b6ff;
-    --pacific-cyan: #00b4d8ff;
+    --pacific-cyan: rgba(0, 180, 216, 0.675);
     --non-photo-blue: #90e0efff;
     --light-cyan: #caf0f8ff;
     --nyanza: #d8f3dcff;
@@ -144,16 +144,22 @@ nav {
     margin-top: 40px;
     padding: 10px;
     width: 100%;
-    justify-items: space-between;
     background-color: var(--pacific-cyan);
     z-index: 2;
 }
 
-nav select {
+nav select, nav select option {
     background-color: transparent;
-    border: transparent;
+    border-color: transparent;
+   margin-top: 50px;
+   margin-bottom: 50px;
     margin-left: 500px;
     width: 150px;
+}
+.dark-mode nav select,
+.dark-mode nav select option{
+    color: var(--arena);
+    background:var(--azul) ;
 }
 
 nav button {
@@ -199,7 +205,7 @@ button {
 }
 
 .btn {
-    top: 75%;
+    top: 70%;
     left: 6%;
     border-radius: 5px;
     background-color: var(--coral);
@@ -223,8 +229,8 @@ button {
 
 .title-h1 {
     font-family: "Lato";
-    font-size: 4rem;
-    top: 40%;
+    font-size: 5rem;
+    top: 30%;
     left: 6%;
     color: var(--federal-blue);
 
@@ -233,7 +239,7 @@ button {
 .title-h2 {
     font-family: "flood-std";
     font-size: 8rem;
-    top: 60%;
+    top: 50%;
     left: 6%;
     color: var(--federal-blue);
 
