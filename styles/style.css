@@ -208,6 +208,7 @@ button {
     top: 70%;
     left: 6%;
     border-radius: 5px;
+    padding: 10px 50px;
     background-color: var(--coral);
 }
 
