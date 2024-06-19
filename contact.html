@@ -41,17 +41,18 @@
 			<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode"><i
 					class="material-icons">brightness_2</i></button>
 		</div>
-		<div class="menu-container">
+		<nav>
+			<a class="logo" href="./index.html"><img class="logo" src="./images/logo-scoots.png" alt="Scoots logo"></a>
 
-			<a class="logo" href="./index.html"><img class="logo" src="./images/logo-scoots.png" alt="logo-img"></a>
-
-			<nav id="nav">
-				<button class="rental"><a href="rentals.html">Rental</a></button>
-				<button><a href="bookings.html">Bookings</a></button>
-				<button><a href="contact.html">Contact</a></button>
-			</nav>
-
-		</div>
+			<select id="currency-selector" onchange="convertCurrency()" aria-label="Select currency">
+				<option value="usd">$ USD</option>
+				<option value="eur">€ EUR</option>
+				<option value="gbp">£ GBP</option>
+			</select>
+			<button class="rental"><a href="rentals.html">RENTAL</a></button>
+			<button><a href="bookings.html">BOOKINGS</a></button>
+			<button><a href="contact.html">CONTAC</a></button>
+		</nav>
 	</header>
 	<div class="hero">
 		<picture>
