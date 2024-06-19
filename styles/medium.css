@@ -201,7 +201,9 @@
         padding: 10px;
         margin: 0 20px;
     }
-
+    #weather-info {
+        margin: 10PX;
+    }
     
     .contact-info2 {
         margin-top: 10px;
@@ -235,7 +237,7 @@
     }
     .carousel-item .card
      {
-      width: 200px;
+      width: auto;
       height: auto;
     }
 
