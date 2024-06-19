@@ -31,9 +31,9 @@
     --bottom: linear-gradient(180deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
     --left: linear-gradient(270deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
     --top-right: linear-gradient(45deg, #f5f5dcff, #30d5c8ff);
-    --bottom-right: linear-gradient(135deg, #f5f5dcff, #F7DC6F, #e68632ff);
+    --bottom-right: linear-gradient(135deg,  #e68632ff,#f5f5dcff, #F7DC6F,#e68632ff);
     --top-left: linear-gradient(225deg, #ffffffff, #30d5c8ff, #30d5c8ff, #133c55ff, #e89145ff);
-    --bottom-left: linear-gradient(315deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+    --bottom-left: linear-gradient(315deg, #e68632ff,#133c55ff,#133c55ff,#30d5c8ff);
     --radial: radial-gradient(#f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
 
 }
@@ -50,9 +50,9 @@ body {
     background-color: var(--arena);
 }
 
-body.dark-mode, 
+body.dark-mode,
 .dark-mode nav {
-    background: var(--dark-green);
+    background: var(--azul);
 }
 
 a,
@@ -112,11 +112,10 @@ header {
 }
 
 .contact-header {
-    background-color: var(--azul);
+    background: var(--bottom-right);
     position: fixed;
     z-index: 3;
     width: 100%;
-    padding: 10px;
 }
 
 
@@ -364,7 +363,9 @@ button {
     background-position: center;
     background-size: cover;
 }
-
+.dark-mode  .weather-container{
+    background: var(--azul);
+}
 
 .weather-text {
     color: var(--azul);
@@ -374,6 +375,9 @@ button {
     margin: 80px;
     padding: 20px;
 
+}
+.dark-mode #weather-info {
+    background: var(--bottom-left);
 }
 
 #weather-info {
@@ -583,7 +587,7 @@ select {
     font-size: 1.2rem;
     padding: 20px;
 
-    
+
 }
 
 /* contact*/
