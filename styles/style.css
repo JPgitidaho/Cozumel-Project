@@ -41,15 +41,12 @@
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     max-width: 1800px;
-    font-size: 1rem;
     background-color: var(--arena);
-    color: var(--azul)
 }
 
 body.dark-mode {
@@ -81,7 +78,7 @@ li {
     color: var(--Azul-Turquesa);
 }
 
-h2 {
+h2, h3 {
     color: var(--azul);
 }
 
@@ -130,31 +127,30 @@ header {
     color: var(--arena);
 }
 
-.menu-container {
+
+
+.logo, .logo a {
+    width:180px;
+    padding: 10px;
+}
+
+nav{
     position: fixed;
-    z-index: 2;
-    margin-top: 25px;
+    display: flex;
+    margin-top: 40px;
+    padding: 0px;
     width: 100%;
-    background-color: var(--arena);
+    justify-items: space-between;
+    background:var(--pacific-cyan);
+    z-index: 2;
 }
-
-
-.logo {
-    width: 300px;
-    margin-left: 50px;
-    margin-bottom: -80px;
+nav button, nav select {
+    margin: 50px;
 }
-
-#nav {
-    display: inline-flex;
-    justify-content: space-around;
-    padding: 5px 10px;
-}
-
-
-#nav button {
-    font-weight: bold;
-    margin-left: 50px;
+nav select  {
+    background-color: transparent;
+    border: transparent;
+    width: 100px;
 }
 
 
@@ -173,12 +169,6 @@ header {
 
 }
 
-#currency-selector {
-    border: none;
-    background-color: var(--arena);
-    margin-left: 30px;
-    width: 100px;
-}
 
 button:hover {
     background-color: var(--Naranja-Coral);
@@ -200,12 +190,10 @@ button {
 
 }
 .btn {
-    top: 60%;
+  top: 50%;
     left: 40%;
     border-radius: 5px;
     background-color: var(--coral);
-    padding: 10px 50px ;
-    font-style: bold;
 }
 .rental {
     background-color: var(--coral);
@@ -454,7 +442,7 @@ button {
 #formcon textarea {
     display: block;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px;
     border: 1px solid var(--honolulu-blue);
     border-radius: 3px;
 }

@@ -40,20 +40,23 @@
 			<button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu" aria-label="Toggle Menu"></button>
 			<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode" aria-label="Toggle Dark Mode"><i class="material-icons" aria-hidden="true">brightness_2</i> <span class="sr-only">Toggle Dark Mode</span></button>
 		</div>
-		<div class="menu-container">
-			<a class="logo" href="./index.html"><img class="logo" src="./images/logo-scoots.png" alt="Scoots logo"></a>
-			<select id="currency-selector" onchange="convertCurrency()" aria-label="Select currency">
-				<option value="usd">$ USD</option>
-				<option value="eur">€ EUR</option>
-				<option value="gbp">£ GBP</option>
-			</select>
-			<nav id="nav">
+
+	
+
+			<nav>
+				<a class="logo" href="./index.html"><img class="logo" src="./images/logo-scoots.png" alt="Scoots logo"></a>
+
+				<select id="currency-selector" onchange="convertCurrency()" aria-label="Select currency">
+					<option value="usd">$ USD</option>
+					<option value="eur">€ EUR</option>
+					<option value="gbp">£ GBP</option>
+				</select>
 				<button class="rental"><a href="rentals.html">Rental</a></button>
 				<button><a href="bookings.html">Bookings</a></button>
 				<button><a href="contact.html">Contact</a></button>
 			</nav>
-			
-		</div>
+
+	
 	</header>
 
 

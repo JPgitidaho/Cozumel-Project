@@ -23,7 +23,7 @@
     }
 
 
-    #nav {
+    nav {
         display: none;
     }
 
@@ -34,11 +34,11 @@
 
     }
 
-    .dark-mode #nav {
+    .dark-mode nav {
         background-color: var(--azul);
     }
 
-    #nav button {
+    nav button {
         display: block;
         width: 100%;
         margin-left: 0px;
@@ -48,8 +48,6 @@
 
 .logo {
     width: 150px;
-    margin-top: 0px;
-    margin-bottom: -30px;
     margin-left: 10px;
 }
 
