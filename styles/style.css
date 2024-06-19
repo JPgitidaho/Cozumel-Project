@@ -42,10 +42,11 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    max-width: 1800px;
+
 }
 
 body {
-    max-width: 1800px;
     background-color: var(--arena);
 }
 
@@ -190,8 +191,8 @@ button {
 
 }
 .btn {
-  top: 50%;
-    left: 40%;
+  top: 75%;
+    left: 10%;
     border-radius: 5px;
     background-color: var(--coral);
 }
