@@ -156,8 +156,9 @@ header {
     margin-left: 500px;
     width: 150px;
 }
-.dark-mode nav select,
-.dark-mode nav select option{
+.dark-mode #nav select,
+.dark-mode #nav select option, 
+.dark-mode .contact-header {
     color: var(--arena);
     background:var(--azul) ;
 }
