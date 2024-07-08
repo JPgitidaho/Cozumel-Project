@@ -6,7 +6,7 @@
         display: block;
         position: absolute;
         top: 0;
-        right: 20%;
+        right:30%;
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -21,9 +21,8 @@
     #burger-icon.active::before {
         content: '✖';
     }
-
-
-    nav {
+ 
+    #nav {
         display: none;
     }
 
@@ -34,11 +33,12 @@
 
     }
 
-    .dark-mode nav {
+    .dark-mode #nav.show,
+    .contact-header .dark-mode {
         background-color: var(--azul);
     }
 
-    nav button {
+    #nav button {
         display: block;
         width: 100%;
         margin-left: 0px;
@@ -47,10 +47,14 @@
 }
 
 .logo {
-    width: 150px;
-    margin-left: 10px;
-}
 
+ margin-left: -10px;
+ position: absolute;
+}
+ 
+.title-h1, .title-h2 {
+    font-size: 2rem;
+}
 
 }
 
@@ -69,13 +73,7 @@
     
 }
 
-@media(min-width:320px) and (max-width:800px)
-{
-    .title-h1, .title-h2 {
-        font-size: 2rem;
-    }
- 
-}
+
 
 @media(min-width:320px) and (max-width:667px) {
 
@@ -114,10 +112,7 @@
         position: relative;
     }
 
-    .hero img {
-        margin-top: 100px;
-
-    }
+   
 
     
 
