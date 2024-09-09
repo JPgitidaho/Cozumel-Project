@@ -43,14 +43,13 @@
     margin: 0;
     box-sizing: border-box;
     max-width: 1800px;
-
 }
 
 body {
     background-color: var(--arena);
 }
 
-body.dark-mode{
+body.dark-mode {
     background: var(--azul);
 }
 
@@ -107,24 +106,18 @@ h3 {
 
 header {
     width: 100%;
-}
-
-.contact-header {
+    background: var(--azul);
     position: fixed;
     z-index: 3;
-    width: 100%;
-    background: var(--azul);
+    padding: 20px;
 }
-
-
 
 
 .fa-social,
-.contact-header a {
+.contact a {
     font-size: 16px;
     display: inline-flex;
-    margin-left: 20px;
-    padding: 20px;
+    padding: 10px;
     color: var(--arena);
 }
 
@@ -133,35 +126,43 @@ header {
 .logo,
 .logo a {
     width: 250px;
-    position: fixed;
-    margin: 30px;
+    position: relative;
     z-index: 3;
-
+margin-left: 35px;
+margin-bottom: -30px;
 
 }
 
 #nav {
     position: fixed;
-    display: flex; 
+    display: flex;
     width: 100%;
-    background-color: var(--pacific-cyan);
+    background-color: transparent;
     z-index: 2;
-    padding: 30px;
+    margin-top: -150px;
+    margin-left: 600px;
 }
+
 .dark-mode #nav {
-background-color: #133C55;
+    background-color: #133C55;
 }
 
 
 #nav select,
 #nav select option {
     border: 3px solid var(--coral);
-    margin-left: 500px;
     width: 150px;
-    margin-top: 50px;
+    margin: 60px;
 }
 
+#nav button {
+    border: 3px solid var(--coral);
+    padding: 10px 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin:60px 10px;
 
+}
 
 .dark-mode .contact-header {
     color: var(--arena);
@@ -169,16 +170,15 @@ background-color: #133C55;
 }
 
 
-
-
 #dark-mode-toggle {
     background-color: transparent;
     border: none;
     cursor: pointer;
     position: absolute;
-    left: 25%;
-    top: 10px;
+    right: 5%;
+    top: 35%;
     color: var(--arena);
+    z-index: 5;
 }
 
 #burger-icon {
@@ -192,32 +192,27 @@ button {
     font-weight: bold;
     border-radius: 5px;
 }
+
 button:hover {
     background-color: var(--Naranja-Coral);
     transform: translateY(-5px);
     transition: transform 0.3s ease;
 }
 
-#nav button {
-    border: 3px solid var(--coral);
-    padding: 10px 40px;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 50px;
-    margin-left: 5%;
 
-}
 
 .dark-mode #nav button {
     background-color: var(--azul);
 }
+
 .dark-mode #nav button a {
     color: var(--arena);
 }
+
 .btn a {
     color: var(--azul);
     font-size: 1rem;
-    
+
 
 }
 

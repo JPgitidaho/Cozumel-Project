@@ -32,27 +32,21 @@
 		<p>The maximum temperature for today in Cozumel is:<br><span id="max-temp">Loading...</span><img id="weather-icon" alt="Weather Icon"></p>
 	</div>
 	<header>
-		<div class="contact-header">
-			<a class="fa-social" href="https://www.facebook.com/" aria-label="Visit our Facebook page"><i class="fa fa-facebook"></i></a>
-			<a class="fa-social" href="https://www.linkedin.com/in/" aria-label="Visit our LinkedIn profile"><i class="fa fa-linkedin"></i></a>
-			<a class="fa-social" href="https://www.instagram.com/" aria-label="Visit our Instagram page"><i class="fa fa-instagram"></i></a>
-			<button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu" aria-label="Toggle Menu"></button>
-			<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode" aria-label="Toggle Dark Mode"><i class="material-icons" aria-hidden="true">brightness_2</i> <span class="sr-only">Toggle Dark Mode</span></button>
-
-		</div>
 		<a class="logo" href="./index.html"><img class="logo" src="./images/logo-scoots.png" alt="Scoots logo"></a>
+		<button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu" aria-label="Toggle Menu"></button>
+		<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode" aria-label="Toggle Dark Mode"><i class="material-icons" aria-hidden="true">brightness_2</i> <span class="sr-only">Toggle Dark Mode</span></button>
 
 			<nav id="nav">
+				<button ><a href="rentals.html">RENTAL</a></button>
+				<button><a href="bookings.html">BOOKINGS</a></button>
+				<button><a href="contact.html">CONTAC</a></button>
 				<select id="currency-selector" onchange="convertCurrency()" aria-label="Select currency">
 					<option value="usd">$ USD</option>
 					<option value="eur">€ EUR</option>
 					<option value="gbp">£ GBP</option>
 				</select>
-				<button ><a href="rentals.html">RENTAL</a></button>
-				<button><a href="bookings.html">BOOKINGS</a></button>
-				<button><a href="contact.html">CONTAC</a></button>
 			</nav>
-
+	
 	</header>
 
 
@@ -296,7 +290,12 @@
 
 
 	<footer>
+		<div class="contact">
+			<a class="fa-social" href="https://www.facebook.com/" aria-label="Visit our Facebook page"><i class="fa fa-facebook"></i></a>
+			<a class="fa-social" href="https://www.linkedin.com/in/" aria-label="Visit our LinkedIn profile"><i class="fa fa-linkedin"></i></a>
+			<a class="fa-social" href="https://www.instagram.com/" aria-label="Visit our Instagram page"><i class="fa fa-instagram"></i></a>
 
+		</div>
 		<p>© 2024 All rights reserved,~Scoots~</p>
 	</footer>
 	<!-- Script de JavaScript -->

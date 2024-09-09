@@ -1,6 +1,12 @@
 
 @media (min-width:320px) and (max-width:1200px) {
-
+    #dark-mode-toggle {
+        
+        right: 25%;
+        top: 5%;
+        
+    }
+    
       
     #burger-icon {
         display: block;
@@ -9,8 +15,8 @@
         cursor: pointer;
         font-size: 1.5rem;
         position: absolute;
-        top: 5%;
         right: 5%;
+        top: 5%;
     }
     #burger-icon::before {
         content: '\2630';
@@ -30,6 +36,7 @@
         display: block;
         text-align: right;
         background-color: var(--arena);
+        width: 100%;
 
     }
 
@@ -71,6 +78,10 @@
 
 @media(min-width:320px) and (max-width:667px) {
 
+    .logo, .logo a {
+        width: 120px;
+margin-left: 10px;        
+    }
     #weather-banner p {
         margin: 0;
         padding: 30px;
@@ -84,6 +95,7 @@
   
     body {
         display: block;
+        margin-left: 20px ;
     }
 
     .contact-header a {
@@ -105,12 +117,13 @@
         width: 100%;
         position: relative;
     }
+   
 
 
     .btn {
         font-size: 16px;
         top: 60%;
-        padding: 10px 20px;
+        padding: 10px 10px;
     }
 
     .welcome h3,
