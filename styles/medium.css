@@ -4,13 +4,13 @@
       
     #burger-icon {
         display: block;
-        position: absolute;
-        top: -5px;
-        right:30%;
         background-color: transparent;
         border: none;
         cursor: pointer;
         font-size: 1.5rem;
+        position: absolute;
+        top: 5%;
+        right: 5%;
     }
     #burger-icon::before {
         content: '\2630';
@@ -45,14 +45,9 @@
     
 }
 
-.logo {
-
- margin-left: -10px;
- position: absolute;
-}
  
 .title-h1, .title-h2 {
-    font-size: 1.5rem;
+   display: none;
 }
 
 }
@@ -111,9 +106,6 @@
         position: relative;
     }
 
-   
-
-    
 
     .btn {
         font-size: 16px;
