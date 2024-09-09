@@ -1,5 +1,5 @@
 
-@media (min-width:320px) and (max-width:1200px) {
+@media (min-width:320px) and (max-width:1300px) {
 
     
       
@@ -42,7 +42,7 @@
 
     #nav button {
         display: block;
-        width: 100%;
+        width: 95%;
         margin-top: 10px;
     
 }
