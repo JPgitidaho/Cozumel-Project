@@ -1,11 +1,6 @@
 
 @media (min-width:320px) and (max-width:1200px) {
-    #dark-mode-toggle {
-        
-        right: 25%;
-        top: 5%;
-        
-    }
+
     
       
     #burger-icon {
@@ -37,6 +32,7 @@
         text-align: right;
         background-color: var(--arena);
         width: 100%;
+        margin:-20px;
 
     }
 
@@ -47,7 +43,6 @@
     #nav button {
         display: block;
         width: 100%;
-        margin-left: 0px;
         margin-top: 10px;
     
 }
