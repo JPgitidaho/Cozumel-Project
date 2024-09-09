@@ -148,7 +148,7 @@ margin-bottom: -30px;
 }
 
 
-#nav select,
+#nav select, #nav #currency-selector 
 #nav select option {
     border: 3px solid var(--coral);
     width: 150px;
@@ -201,8 +201,11 @@ button:hover {
 
 
 
-.dark-mode #nav button {
+.dark-mode #nav button, 
+.dark-mode #currency-selector {
     background-color: var(--azul);
+    color: var(--arena);
+    border-color: var(--coral);
 }
 
 .dark-mode #nav button a {
