@@ -127,9 +127,8 @@ header {
 .logo a {
     width: 150px;
     position: relative;
-    z-index: 3;
-margin-left: 35px;
-margin-bottom: -30px;
+    margin-left: 5px;
+    margin-bottom: -30px;
 
 }
 
@@ -146,14 +145,15 @@ margin-bottom: -30px;
 
 
 
-#nav select, #nav #currency-selector 
-#nav select option {
+#nav select,
+#nav #currency-selector #nav select option {
     width: 150px;
-    
+
 }
 
-#nav button, #nav select, #nav #currency-selector 
-#nav select option  {
+#nav button,
+#nav select,
+#nav #currency-selector #nav select option {
     border: 3px solid var(--coral);
     font-weight: bold;
     border-radius: 10px;
@@ -173,11 +173,8 @@ margin-bottom: -30px;
     cursor: pointer;
     position: absolute;
     right: 2px;
-    top: 15px;
     color: var(--arena);
-    z-index: 3;
-    margin: 10px;
-
+    padding: 5px;
 }
 
 #burger-icon {
@@ -187,9 +184,9 @@ margin-bottom: -30px;
 
 button {
     border: 3px solid var(--coral);
-    padding: 10px 40px;
     font-weight: bold;
     border-radius: 5px;
+    padding: 10px 40px;
 
 }
 
@@ -201,7 +198,7 @@ button:hover {
 
 
 
-.dark-mode #nav button, 
+.dark-mode #nav button,
 .dark-mode #currency-selector {
     background-color: var(--azul);
     color: var(--arena);

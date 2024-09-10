@@ -1,4 +1,4 @@
-@media (min-width:280px) and (max-width:1300px) {
+@media (min-width:300px) and (max-width:1300px) {
 
 
     #burger-icon {
@@ -8,8 +8,9 @@
         cursor: pointer;
         font-size: 2rem;
         position: absolute;
-        right: 40px;
-        top: 5px;
+        left: 50%;
+top: 10%;        
+padding: 5px;
     }
 
     #burger-icon::before {
@@ -24,6 +25,7 @@
 
     #nav {
         display: none;
+        margin-top: 30px;
     }
 
     #nav.show {
@@ -31,10 +33,9 @@
         text-align: right;
         background-color: var(--arena);
         width: 100%;
-        margin-top: 10px;
-        margin-left: 5px;
         position: relative;
-
+padding: 20px ;
+margin-left: 0;
     }
 
     .dark-mode #nav.show {
@@ -43,8 +44,7 @@
 
     #nav button {
         display: block;
-        width: 95%;
-        margin-top: 10px;
+        width:100%;
 
     }
 
@@ -56,7 +56,6 @@
 
     .logo,
     .logo a {
-        margin-left: 10px;
         width: 150px;
     }
 
@@ -85,14 +84,7 @@
         grid-template-columns: 1fr;
     }
 
-    button {
-        padding: 10px 20px;
-        margin: 5px;
-
-    }
-
-    
-
+ 
 
     .btn {
         font-size: 16px;
@@ -127,6 +119,7 @@
     .see {
         margin: 0;
         font-size: 16px;
+        padding: 10px;
     }
 
     .ofert {
@@ -246,7 +239,7 @@
    
 }
 
-@media(min-width:200px) and (max-width:667px) {
+@media(min-width:300px) and (max-width:667px) {
     .carousel-item {
         flex: 0 0 auto;
         width: 55%;
@@ -261,5 +254,8 @@
     .title-h2 {
         display: none;
     }
-
+    .logo,
+    .logo a {
+        width: 80px;
+    }
 }
