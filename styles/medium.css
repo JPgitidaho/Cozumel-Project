@@ -1,17 +1,17 @@
+@media (min-width:280px) and (max-width:1300px) {
 
-@media (min-width:320px) and (max-width:1300px) {
 
-    
     #burger-icon {
         display: block;
         background-color: transparent;
         border: none;
         cursor: pointer;
-        font-size: 3rem;
+        font-size: 2rem;
         position: absolute;
-        right: 2%;
-        top: 5%;
+        right: 40px;
+        top: 5px;
     }
+
     #burger-icon::before {
         content: '\2630';
         color: var(--arena);
@@ -21,7 +21,7 @@
     #burger-icon.active::before {
         content: '✖';
     }
- 
+
     #nav {
         display: none;
     }
@@ -31,7 +31,9 @@
         text-align: right;
         background-color: var(--arena);
         width: 100%;
-        margin:-20px;
+        margin-top: 10px;
+        margin-left: 5px;
+        position: relative;
 
     }
 
@@ -43,58 +45,39 @@
         display: block;
         width: 95%;
         margin-top: 10px;
-    
-}
-.hero img {
-    margin-top: 100px;
-}
- 
-.title-h1, .title-h2 {
-   display: none;
-}
 
-}
-
-@media(min-width:400px) and (max-width:900px)
-{
-    .carousel-item {
-        flex: 0 0 auto;
-        width: 55%;
-        scroll-snap-align: start;
     }
-    .carousel-item .card{
-      max-width: 300px;
-      height: auto;
+
+    .hero img {
+        margin-top: -10px;
     }
- 
-    
-}
 
+  
 
-
-@media(min-width:320px) and (max-width:667px) {
-
-    .logo, .logo a {
-        width: 100px;
+    .logo,
+    .logo a {
+        margin-left: 10px;
+        width: 150px;
     }
+
     #weather-banner p {
-        margin: 0;
         padding: 30px;
-        font-size: 1rem;
+        font-size: 16px;
     }
 
 
     #weather-banner {
-        width: 300px;
-    }
-  
-    body {
-        display: block;
-        margin-left: 20px ;
+        width: 50%;
     }
 
-    .contact-header a {
-        font-size: 16px;
+    body {
+        display: block;
+        margin-left: 20px;
+    }
+
+    header {
+        position: relative;
+        
     }
 
     .home-grid {
@@ -108,11 +91,7 @@
 
     }
 
-    .hero {
-        width: 100%;
-        position: relative;
-    }
-   
+    
 
 
     .btn {
@@ -138,7 +117,7 @@
 
     .cards-container1 {
         margin: 50px;
-     
+
     }
 
     .location {
@@ -193,10 +172,11 @@
         padding: 10px;
         margin: 0 20px;
     }
+
     #weather-info {
         margin: 10PX;
     }
-    
+
     .contact-info2 {
         margin-top: 10px;
     }
@@ -222,37 +202,64 @@
     .card-subtitle {
         padding: 10px;
     }
+
     .carousel-item {
         flex: 0 0 auto;
         width: 100%;
         scroll-snap-align: start;
     }
-    .carousel-item .card
-     {
-      width: auto;
-      height: auto;
+
+    .carousel-item .card {
+        width: auto;
+        height: auto;
     }
 
     span {
         padding: 10px;
     }
 
-#rentals .card {
-    width: 300px;
-}
-a, a:hover {
-    font-size: 16px;
-}
-.contract-information {
+    #rentals .card {
+        width: 300px;
+    }
+
+    a,
+    a:hover {
+        font-size: 16px;
+    }
+
+    .contract-information {
         font-size: 1rem;
-        margin:10px 50px;   
+        margin: 10px 50px;
+    }
+
+    #rentals {
+        display: block;
+        grid-column: 1fr;
+    }
+
+    th {
+        writing-mode: vertical-lr;
+        /* Cambia la orientación de escritura a vertical, de izquierda a derecha */
+        white-space: nowrap;
+        /* Evita que los nombres se desborden en dispositivos móviles */
+    }
+   
 }
-#rentals {
-    display: block;
-    grid-column: 1fr;
-}
-th {
-    writing-mode: vertical-lr; /* Cambia la orientación de escritura a vertical, de izquierda a derecha */
-    white-space: nowrap; /* Evita que los nombres se desborden en dispositivos móviles */
-  }
+
+@media(min-width:200px) and (max-width:667px) {
+    .carousel-item {
+        flex: 0 0 auto;
+        width: 55%;
+        scroll-snap-align: start;
+    }
+
+    .carousel-item .card {
+        max-width: 300px;
+        height: auto;
+    }
+    .title-h1,
+    .title-h2 {
+        display: none;
+    }
+
 }

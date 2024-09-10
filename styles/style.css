@@ -125,7 +125,7 @@ header {
 
 .logo,
 .logo a {
-    width: 250px;
+    width: 150px;
     position: relative;
     z-index: 3;
 margin-left: 35px;
@@ -139,7 +139,7 @@ margin-bottom: -30px;
     width: 100%;
     background-color: transparent;
     z-index: 2;
-    margin-top: -80px;
+    margin-top: -60px;
     margin-left: 500px;
 }
 
@@ -155,7 +155,6 @@ margin-bottom: -30px;
 #nav button, #nav select, #nav #currency-selector 
 #nav select option  {
     border: 3px solid var(--coral);
-    padding: 20px 40px;
     font-weight: bold;
     border-radius: 10px;
     margin: 10px;
@@ -173,10 +172,12 @@ margin-bottom: -30px;
     border: none;
     cursor: pointer;
     position: absolute;
-    right: 2%;
-    top: 55%;
+    right: 2px;
+    top: 15px;
     color: var(--arena);
-    z-index: 5;
+    z-index: 3;
+    margin: 10px;
+
 }
 
 #burger-icon {
@@ -189,6 +190,7 @@ button {
     padding: 10px 40px;
     font-weight: bold;
     border-radius: 5px;
+
 }
 
 button:hover {
@@ -218,7 +220,7 @@ button:hover {
 }
 
 .btn {
-    top: 80%;
+    top: 60%;
     left: 6%;
     border-radius: 5px;
     padding: 10px 50px;
@@ -229,6 +231,7 @@ button:hover {
 
 .hero img {
     width: 100%;
+    margin-top: 50px;
 }
 
 .hero {
@@ -239,7 +242,7 @@ button:hover {
 .title-h1 {
     font-family: "Lato";
     font-size: 5rem;
-    top: 30%;
+    top: 25%;
     left: 6%;
     color: var(--federal-blue);
 
@@ -247,8 +250,8 @@ button:hover {
 
 .title-h2 {
     font-family: "flood-std";
-    font-size: 8rem;
-    top: 60%;
+    font-size: 6rem;
+    top: 40%;
     left: 6%;
     color: var(--federal-blue);
 
