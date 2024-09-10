@@ -2,15 +2,14 @@
 @media (min-width:320px) and (max-width:1300px) {
 
     
-      
     #burger-icon {
         display: block;
         background-color: transparent;
         border: none;
         cursor: pointer;
-        font-size: 1.5rem;
+        font-size: 3rem;
         position: absolute;
-        right: 5%;
+        right: 2%;
         top: 5%;
     }
     #burger-icon::before {
@@ -46,7 +45,9 @@
         margin-top: 10px;
     
 }
-
+.hero img {
+    margin-top: 100px;
+}
  
 .title-h1, .title-h2 {
    display: none;
@@ -74,8 +75,7 @@
 @media(min-width:320px) and (max-width:667px) {
 
     .logo, .logo a {
-        width: 120px;
-margin-left: 10px;        
+        width: 100px;
     }
     #weather-banner p {
         margin: 0;

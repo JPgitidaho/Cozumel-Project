@@ -139,7 +139,7 @@ margin-bottom: -30px;
     width: 100%;
     background-color: transparent;
     z-index: 2;
-    margin-top: -150px;
+    margin-top: -80px;
     margin-left: 500px;
 }
 
@@ -148,17 +148,17 @@ margin-bottom: -30px;
 
 #nav select, #nav #currency-selector 
 #nav select option {
-    border: 3px solid var(--coral);
     width: 150px;
-    margin: 60px;
+    
 }
 
-#nav button {
+#nav button, #nav select, #nav #currency-selector 
+#nav select option  {
     border: 3px solid var(--coral);
-    padding: 10px 40px;
+    padding: 20px 40px;
     font-weight: bold;
-    border-radius: 5px;
-    margin:60px 10px;
+    border-radius: 10px;
+    margin: 10px;
 
 }
 
@@ -173,8 +173,8 @@ margin-bottom: -30px;
     border: none;
     cursor: pointer;
     position: absolute;
-    right: 5%;
-    top: 35%;
+    right: 2%;
+    top: 55%;
     color: var(--arena);
     z-index: 5;
 }
