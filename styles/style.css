@@ -175,6 +175,7 @@ header {
     right: 2px;
     color: var(--arena);
     padding: 5px;
+    z-index: 3;
 }
 
 #burger-icon {
