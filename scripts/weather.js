@@ -34,7 +34,8 @@ async function getWeather(city, country, type, hour = null) {
 
             // Create the content to display for today
             weatherInfo = `
-            <div class="home-grid">
+       
+            <div class="card">
             <div>
                 <h4>WEATHER  NOW </h4>
                 <p>${weatherDescription} </p>
@@ -67,7 +68,8 @@ async function getWeather(city, country, type, hour = null) {
 
             // Create the content to display for tomorrow
             weatherInfo = `
-            <div class="home-grid">
+         
+            <div class="card" >
             <div>
                 <h4>TOMORROW--AT 15:00</h4>
                 <p>${weatherDescription} </p>
@@ -78,6 +80,7 @@ async function getWeather(city, country, type, hour = null) {
                 <p> Wind Speed: ${windSpeed} m/s </p>
                 </div>
                 </div>
+         
 
             `;
         }
