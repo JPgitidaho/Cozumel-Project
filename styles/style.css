@@ -276,8 +276,7 @@ button:hover {
 
 .home-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
 }
 
@@ -297,7 +296,7 @@ button:hover {
     border: 1px solid var(--turqueza);
     padding: 20px;
     border-radius: 5px;
-    margin: 20px 0;
+    margin: 20px ;
     transition: transform 0.3s ease;
     text-align: left;
 }
@@ -563,12 +562,15 @@ th {
 
 #rentals {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+   gap: 30px;
+    margin: 20px;
 }
 
-#rentals .card {
-    width: 80%;
-    margin: 30px;
+#rentals .card{
+    width: 100%;
+   
+    
 
 }
 
