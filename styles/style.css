@@ -390,17 +390,7 @@ margin: 10px;
     background: var(--azul);
 }
 
-.weather-text{
-    justify-items: center;
-    justify-content: center;
-    color: var(--azul);
-    grid-column: span 1;
-    text-align: center;
-    font-size: 1.7rem;
-    margin: 100px;
-    padding: 25px;
 
-}
 
 .dark-mode #weather-info {
     background: var(--bottom-left);
